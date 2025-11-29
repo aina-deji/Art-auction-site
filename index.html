@@ -15,6 +15,20 @@
         <a href="/index.html">Giovanni</a>
       </div>
       <nav class="nav-links">
+              <button class="menu-btn">
+        <svg class="menu-open" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        
+        <!-- svg code for close menu -->
+<svg class= "menu-close" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        
+      </button>
         <ul class="nav-lists">
           <li>
             <a href="/index.html">Home</a>
@@ -27,14 +41,7 @@
  </li>
         </ul>
       </nav>
-      <button class="menu-btn">
-<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-  <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-  <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-</svg>
 
-</button>
     </header>
     
     <main class="main-container">
@@ -53,27 +60,27 @@
             
           <img src="/styles/images/baroquee-painting.jpg" alt="quadratura" draggable="false">
           <h4>Quadratura by andrea pozzo</h4>
-          <p> current bids: $680,000 | <span>ends in 3d 12h</span> </p>
+          <p> current bids: $680,000 | <span id="auction-timer1">ends in 3d 12h</span> </p>
           </div>
                   <div class="image-ctn">
             
           <img src="/styles/images/mona-lisa.jpg" alt="mona-lisa">
           <h4>Mona lisa by Leonardo da vinci</h4>
-          <p> current bids: $3,000,000 | <span>ends in 1h 36s</span> </p>
+          <p> current bids: $3,000,000 | <span id="auction-timer2">ends in 1h 36s</span> </p>
           </div>
         
                   <div class="image-ctn">
             
           <img src="/styles/images/Girl-with-a-Pearl-Earring.jpg" alt="Girl-with-a-Pearl-Earring">
           <h4> Girl with a pearl earring by Johannes vermeer</h4>
-          <p> current bids: $1,080,000 | <span>ends in 2d 1h</span> </p>
+          <p> current bids: $1,080,000 | <span id="auction-timer3">ends in 2d 1h</span> </p>
           </div>
         
                   <div class="image-ctn">
             
           <img src="/styles/images/the-wrath-of-achilles.jpg" alt="the-wrath-of-achilles">
           <h4>The-wrath-of-achilles by Paul Rubens</h4>
-          <p> current bids: $500,000 | <span>ends in 5d 9h<span> </p>
+          <p> current bids: $500,000 | <span id="auction-timer4">ends in 5d 9h<span> </p>
           </div>
         
         </div>
@@ -134,7 +141,7 @@
       <section class="footer-section">
         
         <div class="footer-content">
-         <h4>Contacts</h4>
+         <h4 id="contacts">Contacts</h4>
          <ul>
            <li>
              <a href="https://www.facebook.com/">Facebook</a>
@@ -175,12 +182,13 @@
 </div>
       </section>
        <div class="copy-section">
-   <p> &copy; 2025 Giovanni || All Rights Reserved</p>
+   <p> &copy; <span id="footer-year">....</span> Giovanni || All Rights Reserved</p>
  </div>
     </footer>
     
+    
+    <script src="main.js">
+    </script>
+    
 </body>
-<script src="main.js">
-  
-</script>
 </html>
