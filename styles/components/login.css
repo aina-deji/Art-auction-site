@@ -1,0 +1,113 @@
+/**Global variables**/
+:root{
+  --bg-clr-light: #FAFAFA;
+  --bg-clr-dark: #000000;
+  --clr-light: #FBFBFB;
+  --text-clr-light: #FFFFFF;
+  --text-clr-dark: #000000;
+}
+/* universal reset*/
+html{
+  font-size: 62.5%;
+}
+/** basic reset**/
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #FFFFFf;
+  padding: 2rem;
+}
+.wrapper{
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.91);
+  width: 50rem;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+  color: #000000;
+}
+.wrapper h1{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-clr-dark);
+}
+.wrapper .input-box{
+  width: 100%;
+  height: 5rem;
+  margin: 3rem 0;
+  position: relative;
+}
+.input-box input{
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5rem;
+  color: var(--text-clr-dark);
+  padding: 2rem 1rem;
+}
+.input-box input::placeholder{
+  color: var(--text-clr-dark);
+}
+.input-box i{
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+   transform: translateY(-50%);
+   font-size: 2rem;
+}
+.wrapper .remember{
+  display: flex;
+  justify-content: space-between;
+  margin: -1.5rem 0 1.5rem;
+  font-size: 1.4rem;
+}
+.remember label{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.remember label input{
+  accent-color: white;
+  margin-right: 0.3rem;
+}
+.remember a{
+  text-decoration: none;
+  color: var(--text-clr-dark);
+}
+.remember a:hover{
+  text-decoration: underline;
+}
+.wrapper button{
+  width: 100%;
+  height: 4.5rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.wrapper .signup-links{
+  text-align: center;
+  margin-top: 1rem;
+}
+.signup-links a{
+  font-weight: 600;
+  text-decoration-line: none;
+  color: var(--text-clr-dark);
+}
+.signup-links a:hover{
+  text-decoration: underline;
+}

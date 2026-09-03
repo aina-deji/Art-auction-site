@@ -1,0 +1,45 @@
+/* Add these new styles to your existing stylesheet */
+
+/* General container for the terms page */
+.terms-hero, .terms-section {
+  max-width: 90rem; /* Keeps the content from stretching too wide on large screens */
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.6rem; /* Standard readable font size */
+  line-height: 1.6;
+}
+
+/* Styling the main title and date */
+.terms-hero h1 {
+  font-size: 4rem; /* Larger title */
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.terms-hero p:first-of-type {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 3rem;
+  color: #555;
+}
+
+/* Styling for section headings */
+.terms-section h2 {
+  font-size: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Paragraph styling for the legal text */
+.terms-section p {
+  margin-bottom: 2rem;
+}
+
+/* Media query to adjust for smaller screens */
+@media screen and (min-width: 60rem) {
+  .terms-hero h1 {
+    font-size: 5rem;
+  }
+}

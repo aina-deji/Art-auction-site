@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>art auction website</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/style.css">
+
 </head>
 <body>
   
@@ -17,44 +15,82 @@
         <a href="/index.html">Giovanni</a>
       </div>
       <nav class="nav-links">
+              <button class="menu-btn">
+        <svg class="menu-open" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+          <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        
+        <!-- svg code for close menu -->
+<svg class= "menu-close" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        
+      </button>
         <ul class="nav-lists">
           <li>
-            <a href="/">Home</a>
+            <a href="/index.html">Home</a>
           </li>
            <li>
-   <a href="">Auctions</a>
+   <a href="/auctions.html">Auctions</a>
  </li>
   <li>
-   <a href="">About</a>
+   <a href="/about.html">About</a>
  </li>
         </ul>
       </nav>
-      <button class="menu-btn">
-      <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="6rem" height="5rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
-</svg>
 
-</button>
     </header>
     
     <main class="main-container">
       
       <section class="main-content"> 
       <h2> Timeless collections of artpieces</h2>
-      <p> Experience timeless collections of art from world renowned artist</p>
-      <button class="view-btn">View Auctions</button>
+      <p> Discover and acquire exotic masterpiece from world renowned artists and private collections</p>
+      <a href="auctions.html" class="bid-btn">Bid Now</a>
     
       </section>
       
       <section class="featured">
+        <h2>Featured Auctions</h2>
+        <div class="image-wrapper">
+          <div class="image-ctn">
+            
+          <img src="/styles/images/baroquee-painting.jpg" alt="quadratura" draggable="false">
+          <h4>Quadratura by andrea pozzo</h4>
+          <p> current bids: $680,000 | <span id="auction-timer1">ends in 3d 12h</span> </p>
+          </div>
+                  <div class="image-ctn">
+            
+          <img src="/styles/images/mona-lisa.jpg" alt="mona-lisa">
+          <h4>Mona lisa by Leonardo da vinci</h4>
+          <p> current bids: $3,000,000 | <span id="auction-timer2">ends in 1h 36s</span> </p>
+          </div>
         
+                  <div class="image-ctn">
+            
+          <img src="/styles/images/Girl-with-a-Pearl-Earring.jpg" alt="Girl-with-a-Pearl-Earring">
+          <h4> Girl with a pearl earring by Johannes vermeer</h4>
+          <p> current bids: $1,080,000 | <span id="auction-timer3">ends in 2d 1h</span> </p>
+          </div>
+        
+                  <div class="image-ctn">
+            
+          <img src="/styles/images/the-wrath-of-achilles.jpg" alt="the-wrath-of-achilles">
+          <h4>The-wrath-of-achilles by Paul Rubens</h4>
+          <p> current bids: $500,000 | <span id="auction-timer4">ends in 5d 9h<span> </p>
+          </div>
+        
+        </div>
       </section>
       
       <section class="process">
-        <h2>How it works</h2>
+        <div>
+        <h2>How it works</h2> 
+        </div>
+        <div class="process-container">
         <div class="process_steps search">
           <svg class="icons"
     xmlns="http://www.w3.org/2000/svg" 
@@ -83,7 +119,7 @@
 </svg>
 
           <h3>2. Place Bid</h3>
-          <p>Register and place bids on your favorites pieces Participate in live auctions for an exhilarating experience.</p>
+          <p>Register and place bids on your favorites artpieces Participate in live auctions for an exhilarating experience.</p>
         </div>
         <div class="process_steps win">
           <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-star">
@@ -92,27 +128,29 @@
 </svg>
 
 <h3>3. win</h3>
-<p>The highest bidder wins.We facilitate secure payment and provice worldwide shipping for your new masterpiece</p>
+<p>The highest bidder wins.We facilitate secure payment and provide worldwide shipping for your new artpiece</p>
         </div>
-        <button class="signup">signup</button>
+        </div>
+        <a href="signup.html" class="signup">Login/Register </a>
       </section>
    
     </main>
     
     <footer class="main-footer">
+      <h3>Giovanni</h3>
       <section class="footer-section">
-        <h3>Giovanni</h3>
+        
         <div class="footer-content">
-         <h4>Contacts</h4>
+         <h4 id="contacts">Contacts</h4>
          <ul>
            <li>
-             <a href="/">Facebook</a>
+             <a href="https://www.facebook.com/">Facebook</a>
            </li>
            <li>
-  <a href="/">X (Twitter)</a>
+  <a href="https://www.x.com/">X (Twitter)</a>
 </li>
 <li>
-  <a href="/">Linkedin</a>
+  <a href="https://www.linkedin.com/">Linkedin</a>
 </li>
          </ul>
         </div>
@@ -120,13 +158,13 @@
           <h4>Company</h4>
           <ul>
             <li>
-              <a href="">About</a>
+              <a href="/about.html">About</a>
             </li>
             <li>
-  <a href="">Auctions</a>
+  <a href="/auctions.html">Auctions</a>
 </li>
 <li>
-  <a href="">Vip service</a>
+  <a href="/vip-service.html">Vip service</a>
 </li>
           </ul>
         </div>
@@ -135,22 +173,22 @@
   <h4>Legal</h4>
   <ul>
     <li>
-      <a href="">Terms of service</a>
+      <a href="terms_of_service.html">Terms of service</a>
     </li>
     <li>
-      <a href="">Privacy policy</a>
-    </li>
-    <li>
-      <a href="">Security</a>
+      <a href="privacy_policy.html">Privacy policy</a>
     </li>
   </ul>
 </div>
-        <div class="copy-section">
-          <p> &copy; 2025 Giovanni || All Rights Reserved</p>
-        </div>
       </section>
+       <div class="copy-section">
+   <p> &copy; <span id="footer-year">....</span> Giovanni || All Rights Reserved</p>
+ </div>
     </footer>
     
-
+    
+    <script src="main.js">
+    </script>
+    
 </body>
 </html>
